@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>LAYOUT CSS GRID</title>
+
+        <meta charset="utf-8">
+
+        <meta name="description" content="LAYOUT CSS GRID">
+
+        <meta name="author" content="Mariana Vaz">
+
+        <script src="https://kit.fontawesome.com/d132031da6.js" crossorigin="anonymous"> </script>
+
+        <style>
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+            .col-3 {
+                width: 25%;
+            }
+            .col-4 {
+                width: 33.33%;
+            }
+            .col-5 {
+                width: 41.66%;
+            }
+            .col-6 {
+                width: 50%;}
+            .col-7 {
+                width: 58.33%;
+            }
+            .col-8 {
+                width: 66.66%;
+            }
+            .col-9 {
+                width: 75%;
+            }
+            .col-10 {
+                width: 83.33%;
+            }
+            .col-11 {
+                width: 91.66%;
+            }
+            .col-12 {
+                width: 100%;}
+
+
+            *{
+            box-sizing: border-box;
+            }
+
+            [class*="col-"] {
+                float: left;
+            }
+
+            .row:after {
+                content:"";
+                display: table;
+                clear: both;
+            }
+
+            body{
+                background-color: #eee7d4;
+            }
+
+            .header{
+                background-color: #83bdbe;
+                color: #223240;
+                padding: 3%;
+                text-align: center;
+                font-size: 35px;
+            }
+
+            .topnav{
+                background-color: #223240;
+                padding: 10px;
+                font-size: 24px;
+            }
+
+            #float-right{
+                float: right;
+            }
+
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 10px;
+            }
+
+            li{
+                display: inline;
+            }
+
+            li a{
+                padding: 10px,20px;
+                text-decoration: none;
+                color: #eee7d4;
+
+            }
+
+            a:hover{
+                background-color: #d9895b;
+            }
+
+            #section1{
+                margin: 20px;
+            }
+
+            .coluna4{
+                padding: 5px;
+
+            }
+            #section2{
+                background-color: white;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 1%;
+                
+            }
+
+            .footer{
+                background-color: #223240;
+                color: #eee7d4;
+                padding: 10px;
+            }
+
+            .coluna3{
+                padding: 10px;
+            }
+
+            .coluna3-border{
+                border-left: 1px solid #eee7d4;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img id="image_header" src="pictures/project.jpg" alt="Imagem cabeçalho" width="600">
+            <h1>Projects</h1>
+            <p>in learning context <br> FULLSTACK WEB DEVELOPMENT</p>
+        </div>
+        <div class="topnav">
+            <ul>
+                <li><a href="pratica_15.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="CVProject/index.html">About</a></li>
+                <li><a href="projectos.html">Projects</a></li>
+                <li><a href="CVProject/contacts.html">Contacts</a></li>
+                <li id="float-right"><a href=""><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>    
